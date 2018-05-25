@@ -1,0 +1,23 @@
+C:\Users\rohan\OneDrive\Documents\GitHub\Gamgee\Gamgee\Gamgee\obj\Debug\netcoreapp2.0\Gamgee.csproj.CoreCompileInputs.cache
+C:\Users\rohan\OneDrive\Documents\GitHub\Gamgee\Gamgee\Gamgee\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\rohan\OneDrive\Documents\GitHub\Gamgee\Gamgee\Gamgee\obj\Debug\netcoreapp2.0\Gamgee.AssemblyInfoInputs.cache
+C:\Users\rohan\OneDrive\Documents\GitHub\Gamgee\Gamgee\Gamgee\obj\Debug\netcoreapp2.0\Gamgee.AssemblyInfo.cs
+C:\Users\rohan\OneDrive\Documents\GitHub\Gamgee\Gamgee\Gamgee\bin\Debug\netcoreapp2.0\Gamgee.deps.json
+C:\Users\rohan\OneDrive\Documents\GitHub\Gamgee\Gamgee\Gamgee\bin\Debug\netcoreapp2.0\Gamgee.runtimeconfig.json
+C:\Users\rohan\OneDrive\Documents\GitHub\Gamgee\Gamgee\Gamgee\bin\Debug\netcoreapp2.0\Gamgee.runtimeconfig.dev.json
+C:\Users\rohan\OneDrive\Documents\GitHub\Gamgee\Gamgee\Gamgee\bin\Debug\netcoreapp2.0\Gamgee.dll
+C:\Users\rohan\OneDrive\Documents\GitHub\Gamgee\Gamgee\Gamgee\bin\Debug\netcoreapp2.0\Gamgee.pdb
+C:\Users\rohan\OneDrive\Documents\GitHub\Gamgee\Gamgee\Gamgee\obj\Debug\netcoreapp2.0\Gamgee.dll
+C:\Users\rohan\OneDrive\Documents\GitHub\Gamgee\Gamgee\Gamgee\obj\Debug\netcoreapp2.0\Gamgee.pdb
+C:\Users\rohan\Visual Studio 2017\Projects\Gamgee\Gamgee\bin\Debug\netcoreapp2.0\Gamgee.deps.json
+C:\Users\rohan\Visual Studio 2017\Projects\Gamgee\Gamgee\bin\Debug\netcoreapp2.0\Gamgee.runtimeconfig.json
+C:\Users\rohan\Visual Studio 2017\Projects\Gamgee\Gamgee\bin\Debug\netcoreapp2.0\Gamgee.runtimeconfig.dev.json
+C:\Users\rohan\Visual Studio 2017\Projects\Gamgee\Gamgee\bin\Debug\netcoreapp2.0\Gamgee.dll
+C:\Users\rohan\Visual Studio 2017\Projects\Gamgee\Gamgee\bin\Debug\netcoreapp2.0\Gamgee.pdb
+C:\Users\rohan\Visual Studio 2017\Projects\Gamgee\Gamgee\obj\Debug\netcoreapp2.0\Gamgee.csproj.CoreCompileInputs.cache
+C:\Users\rohan\Visual Studio 2017\Projects\Gamgee\Gamgee\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\rohan\Visual Studio 2017\Projects\Gamgee\Gamgee\obj\Debug\netcoreapp2.0\Gamgee.AssemblyInfoInputs.cache
+C:\Users\rohan\Visual Studio 2017\Projects\Gamgee\Gamgee\obj\Debug\netcoreapp2.0\Gamgee.AssemblyInfo.cs
+C:\Users\rohan\Visual Studio 2017\Projects\Gamgee\Gamgee\obj\Debug\netcoreapp2.0\Gamgee.dll
+C:\Users\rohan\Visual Studio 2017\Projects\Gamgee\Gamgee\obj\Debug\netcoreapp2.0\Gamgee.pdb
+C:\Users\rohan\Visual Studio 2017\Projects\Gamgee\Gamgee\obj\Debug\netcoreapp2.0\Gamgee.csprojResolveAssemblyReference.cache

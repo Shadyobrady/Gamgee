@@ -1,0 +1,37 @@
+﻿@model Gamgee.Models.Post
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+@inject UserManager<ApplicationUser> UserManager
+
+<h2>@Html.DisplayFor(model => model.Title)</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PostedDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TimeStampDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Author)
+        </dt>
+        <dd>
+            @UserManager.GetUserName(User)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Body)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Body)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.PostID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
