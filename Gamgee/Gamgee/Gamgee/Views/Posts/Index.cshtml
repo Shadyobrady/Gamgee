@@ -37,13 +37,15 @@
                     @Html.DisplayFor(modelItem => item.PostedDate)
                 </td>
                 <td>
-                    @UserManager.GetUserName(User)
+                    @Html.DisplayFor(modelItem => item.Author)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.PostID">Edit</a> |
-                    <a asp-action="Delete" asp-route-id="@item.PostID">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.PostID" class="btn btn-sm btn-success">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.PostID" class="btn btn-sm btn-danger">Delete</a>
                 </td>
             </tr>
         }
     </tbody>
 </table>
+
+

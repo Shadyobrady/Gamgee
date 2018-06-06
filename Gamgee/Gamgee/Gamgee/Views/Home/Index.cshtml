@@ -2,13 +2,14 @@
     ViewData["Title"] = "Home Page";
 }
 
-
-
-<div class="row">
-    <div class="col-md-5 col-md-offset-2">
-        <a asp-area="" asp-controller="Account" asp-action="Login"><button class="needer">Need a ride?</button></a>
-    </div>
-    <div class="col-md-3">
-       <a asp-area="" asp-controller="Account" asp-action="Login"><button class="giver">Want some company?</button></a>
+<br />
+<div class="gamgeepic">
+    <div class="row">
+        <div class="col-sm-2 col-sm-offset-4 buttonmain">
+            <a asp-area="" asp-controller="Account" asp-action="Login" class="btn btn-lg btn-primary">Need a ride?</a>
+        </div>
+        <div class="col-sm-2 buttonmain">
+            <a asp-area="" asp-controller="Account" asp-action="Login" class="btn btn-lg btn-success">Want company?</a>
+        </div>
     </div>
 </div>

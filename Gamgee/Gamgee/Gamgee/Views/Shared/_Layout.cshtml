@@ -8,7 +8,6 @@
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
-        <link rel="stylesheet" href="~/css/main.css" />
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -18,7 +17,7 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -32,21 +31,23 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     @if (User.Identity.IsAuthenticated)
-    {
-                <li><a asp-area="" asp-controller="Posts" asp-action="Index">Rides</a></li>
-}
+                    {
+                        <li><a asp-area="" asp-controller="Posts" asp-action="Index">Rides</a></li>
+                    }
                     @await Html.PartialAsync("_LoginPartial")
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container body-content">
+    <div class="body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2018 - Gamgee</p>
-        </footer>
     </div>
+    <footer class="footer">
+        <div class="container">
+            <hr />
+            <p>&copy; 2018 - Gamgee</p>
+        </div>
+    </footer>
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>

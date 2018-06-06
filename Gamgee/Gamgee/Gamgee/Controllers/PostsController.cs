@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Gamgee.Data;
 using Gamgee.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Gamgee.Controllers
 {
@@ -26,12 +27,14 @@ namespace Gamgee.Controllers
         }
 
         // GET: Posts
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Post.ToListAsync());
         }
 
         // GET: Posts/Details/5
+        [Authorize]
         public async Task<IActionResult> Details(long? id)
         {
             if (id == null)
@@ -50,6 +53,7 @@ namespace Gamgee.Controllers
         }
 
         // GET: Posts/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -60,12 +64,13 @@ namespace Gamgee.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Create([Bind("PostID,Title,PostedDate,Author,Body")] Post post)
         {
 
             if (ModelState.IsValid)
             {
-               // post.ApplicationId = _userManager.
+               post.Author = _userManager.GetUserName(HttpContext.User);
                 _context.Add(post);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -74,6 +79,7 @@ namespace Gamgee.Controllers
         }
 
         // GET: Posts/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(long? id)
         {
             if (id == null)
@@ -92,9 +98,11 @@ namespace Gamgee.Controllers
         // POST: Posts/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(long id, [Bind("PostID,Title,Body")] Post post)
+        [Authorize]
+        public async Task<IActionResult> Edit(long id, [Bind("PostID,Title,PostedDate,Author,Body")] Post post)
         {
             if (id != post.PostID)
             {
@@ -105,6 +113,7 @@ namespace Gamgee.Controllers
             {
                 try
                 {
+                    post.Author = _userManager.GetUserName(HttpContext.User);
                     _context.Update(post);
                     await _context.SaveChangesAsync();
                 }
@@ -125,6 +134,7 @@ namespace Gamgee.Controllers
         }
 
         // GET: Posts/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(long? id)
         {
             if (id == null)
@@ -145,6 +155,7 @@ namespace Gamgee.Controllers
         // POST: Posts/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> DeleteConfirmed(long id)
         {
             var post = await _context.Post.SingleOrDefaultAsync(m => m.PostID == id);
