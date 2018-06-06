@@ -13132,11 +13132,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rohan\\OneDrive\\Documents\\GitHub\\Gamgee\\Gamgee\\Gamgee\\Gamgee.csproj",
+      "projectUniqueName": "C:\\Users\\rohan\\Visual Studio 2017\\Projects\\Gamgee\\Gamgee\\Gamgee.csproj",
       "projectName": "Gamgee",
-      "projectPath": "C:\\Users\\rohan\\OneDrive\\Documents\\GitHub\\Gamgee\\Gamgee\\Gamgee\\Gamgee.csproj",
+      "projectPath": "C:\\Users\\rohan\\Visual Studio 2017\\Projects\\Gamgee\\Gamgee\\Gamgee.csproj",
       "packagesPath": "C:\\Users\\rohan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rohan\\OneDrive\\Documents\\GitHub\\Gamgee\\Gamgee\\Gamgee\\obj\\",
+      "outputPath": "C:\\Users\\rohan\\Visual Studio 2017\\Projects\\Gamgee\\Gamgee\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",

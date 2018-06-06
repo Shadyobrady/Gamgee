@@ -8,6 +8,9 @@ namespace Gamgee.Models.AccountViewModels
 {
     public class RegisterViewModel
     {
+        [MinLength(5, ErrorMessage = "Username must be more than 5 characters")]
+        public string Username { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
